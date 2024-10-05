@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 16px;
+    }
+
+    :root {
+      color-scheme: dark;
+    }
+
+    #chat {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      overflow: hidden;
+      width: 350px;
+      height: 100%;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Chat</h1>
+  <section id="chat">
+    <form>
+      <input type="text" name="message" id="message" placeholder="Type a message" autocomplete="off" />
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</body>
+
+</html>
